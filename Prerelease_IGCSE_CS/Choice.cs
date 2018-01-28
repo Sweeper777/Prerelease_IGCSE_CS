@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 namespace Prerelease_IGCSE_CS
@@ -36,5 +36,8 @@ namespace Prerelease_IGCSE_CS
             new Choice("USB Ports", "2 ports", 10),
             new Choice("USB Ports", "4 ports", 20),
         };
+
+        public static readonly IEnumerable<IGrouping<string, Choice>> ChoiceDictionary =
+            AllChoices.GroupBy(x => x.ComponentName);
     }
 }
