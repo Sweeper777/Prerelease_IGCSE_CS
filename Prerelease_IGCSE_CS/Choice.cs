@@ -15,5 +15,11 @@ namespace Prerelease_IGCSE_CS
             Name = name;
             Price = price;
         }
+
+        public override string ToString()
+        {
+            return $"{ComponentName} - {Name}";
+        }
+
     }
 }
