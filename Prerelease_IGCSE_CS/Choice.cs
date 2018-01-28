@@ -9,5 +9,11 @@ namespace Prerelease_IGCSE_CS
         public string Name { get; }
         public int Price { get; }
 
+        Choice(string componentName, string name, int price)
+        {
+            ComponentName = componentName;
+            Name = name;
+            Price = price;
+        }
     }
 }
