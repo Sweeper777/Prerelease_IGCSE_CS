@@ -1,0 +1,5 @@
+/Users/mulangsu/Projects/Prerelease_IGCSE_CS/Prerelease_IGCSE_CS/bin/Debug/Prerelease_IGCSE_CS.exe
+/Users/mulangsu/Projects/Prerelease_IGCSE_CS/Prerelease_IGCSE_CS/bin/Debug/Prerelease_IGCSE_CS.pdb
+/Users/mulangsu/Projects/Prerelease_IGCSE_CS/Prerelease_IGCSE_CS/obj/x86/Debug/Prerelease_IGCSE_CS.csproj.CoreCompileInputs.cache
+/Users/mulangsu/Projects/Prerelease_IGCSE_CS/Prerelease_IGCSE_CS/obj/x86/Debug/Prerelease_IGCSE_CS.exe
+/Users/mulangsu/Projects/Prerelease_IGCSE_CS/Prerelease_IGCSE_CS/obj/x86/Debug/Prerelease_IGCSE_CS.pdb

@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{691037E1-CF6F-4A1F-AE3C-E6AE442E790C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Prerelease_IGCSE_CS/Program.cs">
+    <Files>
+      <File FileName="Prerelease_IGCSE_CS/Program.cs" Line="74" Column="27" />
+      <File FileName="Prerelease_IGCSE_CS/Stock.cs" Line="24" Column="46" />
+      <File FileName="Prerelease_IGCSE_CS/Order.cs" Line="9" Column="49" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Prerelease__IGCSE__CS PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
