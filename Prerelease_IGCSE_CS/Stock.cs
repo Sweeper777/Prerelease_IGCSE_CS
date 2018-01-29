@@ -6,5 +6,12 @@ namespace Prerelease_IGCSE_CS
     public static class Stock
     {
         public static readonly Dictionary<Choice, int> AllStock;
+
+        static Stock() 
+        {
+            var r = new Random();
+            AllStock = Choice.AllChoices.ToDictionary(x => x, x => r.Next(100));
+        }
+
     }
 }
