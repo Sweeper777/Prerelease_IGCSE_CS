@@ -1,4 +1,4 @@
-using System.Text;
+﻿using System.Text;
 using System.Collections.Generic;
 using System.Linq;
 namespace Prerelease_IGCSE_CS
@@ -16,6 +16,16 @@ namespace Prerelease_IGCSE_CS
             ID = nextID;
             nextID++;
             Price = Choices.Sum(x => x.Price) * 1.2m;
+        }
+
+        public override string ToString()
+        {
+            var builder = new StringBuilder($"ID: {ID}\nComponents:\n");
+            foreach (var choice in Choices) {
+                builder.AppendLine(choice.ToString());
+            }
+            builder.AppendLine($"Price: ${Price}");
+            return builder.ToString();
         }
     }
 }
