@@ -10,5 +10,12 @@ namespace Prerelease_IGCSE_CS
         static ulong nextID = 1;
         public decimal Price { get; set; }
 
+        public Estimate(List<Choice> choices)
+        {
+            Choices = new List<Choice>(choices);
+            ID = nextID;
+            nextID++;
+            Price = Choices.Sum(x => x.Price) * 1.2m;
+        }
     }
 }
