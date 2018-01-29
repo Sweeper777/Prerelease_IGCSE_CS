@@ -8,6 +8,7 @@ namespace Prerelease_IGCSE_CS
     {
         public static void Main(string[] args)
         {
+        // Task 1 Completed
         static Estimate GetEstimate()
         {
             var choices = new List<Choice>();
