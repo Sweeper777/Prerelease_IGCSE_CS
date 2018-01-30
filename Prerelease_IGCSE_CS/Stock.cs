@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 namespace Prerelease_IGCSE_CS
@@ -15,5 +15,13 @@ namespace Prerelease_IGCSE_CS
 
         public static bool InStock(Choice choice) => AllStock[choice] > 0;
 
+        public static void Purchase(List<Choice> choices)
+        {
+            if (choices.Any(x => !InStock(x))) {
+                throw new ArgumentException("One or more components are not in stock!");
+            }
+
+            choices.ForEach(x => AllStock[x] -= 1);
+        }
     }
 }
