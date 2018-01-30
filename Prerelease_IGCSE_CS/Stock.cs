@@ -13,5 +13,7 @@ namespace Prerelease_IGCSE_CS
             AllStock = Choice.AllChoices.ToDictionary(x => x, x => r.Next(100));
         }
 
+        public static bool InStock(Choice choice) => AllStock[choice] > 0;
+
     }
 }
