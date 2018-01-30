@@ -12,6 +12,17 @@ namespace Prerelease_IGCSE_CS
             while (true)
             {
                 Console.WriteLine("Press O to place an order. Press any other key to end the day's transactions.");
+                if (char.ToLower(Console.ReadKey().KeyChar) == 'o')
+                {
+                    Console.WriteLine();
+                    PrintSeparator();
+                    var estimate = GetEstimate();
+                    PrintSeparator();
+                    Console.WriteLine(estimate);
+                    PrintSeparator();
+                }
+            }
+            PrintReport();
         }
 
         // Task 1 Completed
