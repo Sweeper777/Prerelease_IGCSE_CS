@@ -15,5 +15,10 @@ namespace Prerelease_IGCSE_CS
             AllOrders.Add(this);
         }
 
+        public override string ToString()
+        {
+            return $"{EstimateDetails}Customer Name: {CustomerName}\nDate: {Date.ToShortDateString()}";
+        }
+
     }
 }
