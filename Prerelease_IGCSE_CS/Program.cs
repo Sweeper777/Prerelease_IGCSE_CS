@@ -8,6 +8,12 @@ namespace Prerelease_IGCSE_CS
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine("Welcome to the computer ordering system!");
+            while (true)
+            {
+                Console.WriteLine("Press O to place an order. Press any other key to end the day's transactions.");
+        }
+
         // Task 1 Completed
         static Estimate GetEstimate()
         {
