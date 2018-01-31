@@ -87,6 +87,8 @@ namespace Prerelease_IGCSE_CS
             Console.WriteLine($"Total Value: ${totalValue}");
         }
 
+        static void PrintSeparator() {
+            Console.WriteLine("-------------------");
         }
     }
 }
