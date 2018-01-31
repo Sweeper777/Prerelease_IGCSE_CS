@@ -23,6 +23,12 @@ namespace Prerelease_IGCSE_CS
                     if (estimate.Choices.All(x => Stock.InStock(x))) {
                         Console.WriteLine("All the selected components are in stock. Press C to confirm the order, or any other key to cancel.");
                         if (char.ToLower(Console.ReadKey().KeyChar) == 'c') {
+                            Console.WriteLine();
+                            Console.WriteLine("Please enter your name.");
+                            var name = Console.ReadLine();
+                            Stock.Purchase(estimate.Choices);
+                            var order = new Order(name, estimate);
+                            Console.WriteLine("Order has been made successfully.");
                         }
                     } else {
                         Console.WriteLine("One or more components requested is out of stock. Please try other components.");
