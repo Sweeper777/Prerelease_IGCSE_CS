@@ -70,6 +70,23 @@ namespace Prerelease_IGCSE_CS
             }
             return new Estimate(choices);
         }
+        static void PrintReport() {
+            PrintSeparator();
+            Console.WriteLine("End of Day Report");
+            PrintSeparator();
+            var allOrdersToday = Order.AllOrders.Where(x => x.Date == DateTime.Today).ToList();
+            Console.WriteLine($"Number of orders: {allOrdersToday.Count}");
+            Console.WriteLine("Components Sold:");
+            var componentsSold = allOrdersToday.SelectMany(x => x.EstimateDetails.Choices)
+                                               .GroupBy(x => x)
+                                               .ToDictionary(x => x.Key.ToString(), x => x.Count());
+            foreach (var kvp in componentsSold) {
+                Console.WriteLine($"{kvp.Key}: {kvp.Value}");
+            }
+            var totalValue = allOrdersToday.Aggregate(0m, (x, y) => x + y.EstimateDetails.Price);
+            Console.WriteLine($"Total Value: ${totalValue}");
+        }
+
         }
     }
 }
