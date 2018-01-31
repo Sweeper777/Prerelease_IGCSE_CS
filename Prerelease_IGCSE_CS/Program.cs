@@ -8,6 +8,7 @@ namespace Prerelease_IGCSE_CS
     {
         public static void Main(string[] args)
         {
+            // Task 2 Completedad
             Console.WriteLine("Welcome to the computer ordering system!");
             while (true)
             {
