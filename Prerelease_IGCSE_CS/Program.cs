@@ -29,6 +29,15 @@ namespace Prerelease_IGCSE_CS
                             Stock.Purchase(estimate.Choices);
                             var order = new Order(name, estimate);
                             Console.WriteLine("Order has been made successfully.");
+                            PrintSeparator();
+                            Console.WriteLine(order);
+                            PrintSeparator();
+
+                        } else {
+                            Console.WriteLine();
+                            Console.WriteLine("Order canceled");
+                            PrintSeparator();
+                            continue;
                         }
                     } else {
                         Console.WriteLine("One or more components requested is out of stock. Please try other components.");
