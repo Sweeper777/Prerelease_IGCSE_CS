@@ -6,7 +6,7 @@ namespace Prerelease_IGCSE_CS
 {
     class MainClass
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             // Task 2 Completedad
             Console.WriteLine("Welcome to the computer ordering system!");
