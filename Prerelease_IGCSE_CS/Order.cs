@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 namespace Prerelease_IGCSE_CS
 {
@@ -20,5 +20,6 @@ namespace Prerelease_IGCSE_CS
             return $"{EstimateDetails}Customer Name: {CustomerName}\nDate: {Date.ToShortDateString()}";
         }
 
+        public static readonly List<Order> AllOrders = new List<Order>();
     }
 }
