@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -21,7 +21,7 @@ namespace Prerelease_IGCSE_CS
                     PrintSeparator();
                     Console.WriteLine(estimate);
                     PrintSeparator();
-                    if (estimate.Choices.All(x => Stock.InStock(x))) {
+                    if (estimate.Choices.All(Stock.InStock)) {
                         Console.WriteLine("All the selected components are in stock. Press C to confirm the order, or any other key to cancel.");
                         if (char.ToLower(Console.ReadKey().KeyChar) == 'c') {
                             Console.WriteLine();
