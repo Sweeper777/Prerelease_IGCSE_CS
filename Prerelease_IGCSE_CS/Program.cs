@@ -70,6 +70,8 @@ namespace Prerelease_IGCSE_CS
             }
             return new Estimate(choices);
         }
+
+        // Task 3 Complete
         static void PrintReport() {
             PrintSeparator();
             Console.WriteLine("End of Day Report");
