@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prerelease_IGCSE_CS", "Prerelease_IGCSE_CS\Prerelease_IGCSE_CS.csproj", "{691037E1-CF6F-4A1F-AE3C-E6AE442E790C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Procedural_Solution", "Procedural_Solution\Procedural_Solution.csproj", "{6DEBA529-3F2F-4C46-91C3-559F4B939D55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,5 +15,9 @@ Global
 		{691037E1-CF6F-4A1F-AE3C-E6AE442E790C}.Debug|x86.Build.0 = Debug|x86
 		{691037E1-CF6F-4A1F-AE3C-E6AE442E790C}.Release|x86.ActiveCfg = Release|x86
 		{691037E1-CF6F-4A1F-AE3C-E6AE442E790C}.Release|x86.Build.0 = Release|x86
+		{6DEBA529-3F2F-4C46-91C3-559F4B939D55}.Debug|x86.ActiveCfg = Debug|x86
+		{6DEBA529-3F2F-4C46-91C3-559F4B939D55}.Debug|x86.Build.0 = Debug|x86
+		{6DEBA529-3F2F-4C46-91C3-559F4B939D55}.Release|x86.ActiveCfg = Release|x86
+		{6DEBA529-3F2F-4C46-91C3-559F4B939D55}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
