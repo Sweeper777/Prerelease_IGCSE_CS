@@ -1,0 +1,6 @@
+/Users/mulangsu/Projects/Prerelease_IGCSE_CS/Procedural_Solution/obj/x86/Debug/Procedural_Solution.csprojResolveAssemblyReference.cache
+/Users/mulangsu/Projects/Prerelease_IGCSE_CS/Procedural_Solution/obj/x86/Debug/Procedural_Solution.csproj.CoreCompileInputs.cache
+/Users/mulangsu/Projects/Prerelease_IGCSE_CS/Procedural_Solution/bin/Debug/Procedural_Solution.exe
+/Users/mulangsu/Projects/Prerelease_IGCSE_CS/Procedural_Solution/bin/Debug/Procedural_Solution.pdb
+/Users/mulangsu/Projects/Prerelease_IGCSE_CS/Procedural_Solution/obj/x86/Debug/Procedural_Solution.exe
+/Users/mulangsu/Projects/Prerelease_IGCSE_CS/Procedural_Solution/obj/x86/Debug/Procedural_Solution.pdb

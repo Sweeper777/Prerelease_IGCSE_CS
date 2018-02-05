@@ -1,7 +1,8 @@
-﻿<Properties StartupConfiguration="{691037E1-CF6F-4A1F-AE3C-E6AE442E790C}|Default">
+﻿<Properties StartupConfiguration="{6DEBA529-3F2F-4C46-91C3-559F4B939D55}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Procedural_Solution/ProceduralProgram.cs">
     <Files>
-      <File FileName="Procedural_Solution/ProceduralProgram.cs" Line="9" Column="13" />
+      <File FileName="Prerelease_IGCSE_CS/Program.cs" Line="74" Column="1" />
+      <File FileName="Procedural_Solution/ProceduralProgram.cs" Line="72" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
@@ -9,6 +10,7 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Procedural__Solution PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.Prerelease__IGCSE__CS PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
