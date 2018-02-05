@@ -18,5 +18,8 @@ namespace Procedural_Solution
         static IReadOnlyList<string> screenChoices = new List<string> { "19\"", "23\"" }.AsReadOnly();
         static IReadOnlyList<int> screenPrices = new List<int> { 65, 120 }.AsReadOnly();
 
+        static IReadOnlyList<string> caseChoices = new List<string> { "Mini Tower", "Midi Tower" }.AsReadOnly();
+        static IReadOnlyList<int> casePrices = new List<int> { 40, 70 }.AsReadOnly();
+
     }
 }
