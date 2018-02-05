@@ -15,5 +15,8 @@ namespace Procedural_Solution
         static IReadOnlyList<string> storageChoices = new List<string> { "1TB", "2TB" }.AsReadOnly();
         static IReadOnlyList<int> storagePrices = new List<int> { 50, 100 }.AsReadOnly();
 
+        static IReadOnlyList<string> screenChoices = new List<string> { "19\"", "23\"" }.AsReadOnly();
+        static IReadOnlyList<int> screenPrices = new List<int> { 65, 120 }.AsReadOnly();
+
     }
 }
