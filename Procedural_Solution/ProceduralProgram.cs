@@ -30,6 +30,17 @@ namespace Procedural_Solution
         static int @case;
         static int usb;
         static int nextID = 1;
+        static int AskForChoice(string componentName, IReadOnlyList<string> choices, IReadOnlyList<int> prices)
+        {
+            Console.WriteLine($"Please select a {componentName}:");
+            for (int i = 0; i < choices.Count; i++)
+            {
+                Console.WriteLine($"{i + 1}. {choices[i]} - ${prices[i]}");
+            }
+            var retVal = Convert.ToInt32(Console.ReadKey().KeyChar.ToString()) - 1;
+            Console.WriteLine();
+            return retVal;
+        }
         static void PrintSeparator()
         {
             Console.WriteLine("-------------------");
