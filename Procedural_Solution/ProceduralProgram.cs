@@ -39,6 +39,16 @@ namespace Procedural_Solution
                 Console.WriteLine("Press O to place an order. Press any other key to end the day's transactions.");
                 if (char.ToLower(Console.ReadKey().KeyChar) == 'o')
                 {
+                    Console.WriteLine();
+                    PrintSeparator();
+
+                    processor = AskForChoice("processor", processorChoices, processorPrices);
+                    ram = AskForChoice("RAM", ramChoices, ramPrices);
+                    storage = AskForChoice("storage", storageChoices, storagePrices);
+                    screen = AskForChoice("screen", screenChoices, screenPrices);
+                    @case = AskForChoice("case", caseChoices, casePrices);
+                    usb = AskForChoice("USB port count", usbChoices, usbPrices);
+
                 }
             }
         }
