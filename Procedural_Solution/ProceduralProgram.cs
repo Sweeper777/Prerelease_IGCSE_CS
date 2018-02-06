@@ -30,5 +30,9 @@ namespace Procedural_Solution
         static int @case;
         static int usb;
         static int nextID = 1;
+        static void PrintSeparator()
+        {
+            Console.WriteLine("-------------------");
+        }
     }
 }
