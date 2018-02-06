@@ -29,5 +29,6 @@ namespace Procedural_Solution
         static int screen;
         static int @case;
         static int usb;
+        static int nextID = 1;
     }
 }
