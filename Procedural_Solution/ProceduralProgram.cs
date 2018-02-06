@@ -30,6 +30,19 @@ namespace Procedural_Solution
         static int @case;
         static int usb;
         static int nextID = 1;
+        public static void Main(string[] args)
+        {
+
+            Console.WriteLine("Welcome to the computer ordering system!");
+            while (true)
+            {
+                Console.WriteLine("Press O to place an order. Press any other key to end the day's transactions.");
+                if (char.ToLower(Console.ReadKey().KeyChar) == 'o')
+                {
+                }
+            }
+        }
+
         static int AskForChoice(string componentName, IReadOnlyList<string> choices, IReadOnlyList<int> prices)
         {
             Console.WriteLine($"Please select a {componentName}:");
