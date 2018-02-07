@@ -84,6 +84,7 @@ namespace Procedural_Solution
                 usbPrices[usb]
             ) * 1.2m;
 
+            Console.WriteLine($"Price: ${price}");
         }
 
         static void PrintSeparator()
