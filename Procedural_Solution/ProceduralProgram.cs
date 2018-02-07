@@ -64,6 +64,18 @@ namespace Procedural_Solution
             Console.WriteLine();
             return retVal;
         }
+        static void PrintEstimate()
+        {
+            Console.WriteLine($"ID: {nextID}");
+            Console.WriteLine("Components:");
+            Console.WriteLine($"Processor: {processorChoices[processor]}");
+            Console.WriteLine($"RAM: {ramChoices[ram]}");
+            Console.WriteLine($"Storage: {storageChoices[storage]}");
+            Console.WriteLine($"Screen: {screenChoices[screen]}");
+            Console.WriteLine($"Case: {caseChoices[@case]}");
+            Console.WriteLine($"USB Ports: {usbChoices[usb]}");
+        }
+
         static void PrintSeparator()
         {
             Console.WriteLine("-------------------");
