@@ -49,6 +49,10 @@ namespace Procedural_Solution
                     @case = AskForChoice("case", caseChoices, casePrices);
                     usb = AskForChoice("USB port count", usbChoices, usbPrices);
 
+                    PrintSeparator();
+                    PrintEstimate();
+                    PrintSeparator();
+
                 }
             }
         }
