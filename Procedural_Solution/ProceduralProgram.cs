@@ -35,6 +35,12 @@ namespace Procedural_Solution
         static List<int> screenStock = new List<int> { 10, 10 };
         static List<int> caseStock = new List<int> { 10, 10 };
         static List<int> usbStock = new List<int> { 10, 10 };
+        static List<int> processorSold = new List<int> { 0, 0, 0 };
+        static List<int> ramSold = new List<int> { 0, 0 };
+        static List<int> storageSold = new List<int> { 0, 0 };
+        static List<int> screenSold = new List<int> { 0, 0 };
+        static List<int> caseSold = new List<int> { 0, 0 };
+        static List<int> usbSold = new List<int> { 0, 0 };
         static int nextID = 1;
         public static void Main(string[] args)
         {
