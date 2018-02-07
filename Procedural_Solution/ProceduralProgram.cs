@@ -45,6 +45,8 @@ namespace Procedural_Solution
 
         static List<int> orderNumbers = new List<int>();
 
+        static decimal totalValue = 0;
+
         public static void Main(string[] args)
         {
 
