@@ -42,6 +42,9 @@ namespace Procedural_Solution
         static List<int> caseSold = new List<int> { 0, 0 };
         static List<int> usbSold = new List<int> { 0, 0 };
         static int nextID = 1;
+
+        static List<int> orderNumbers = new List<int>();
+
         public static void Main(string[] args)
         {
 
