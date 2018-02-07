@@ -74,6 +74,16 @@ namespace Procedural_Solution
             Console.WriteLine($"Screen: {screenChoices[screen]}");
             Console.WriteLine($"Case: {caseChoices[@case]}");
             Console.WriteLine($"USB Ports: {usbChoices[usb]}");
+
+            var price = (
+                processorPrices[processor] +
+                ramPrices[ram] +
+                storagePrices[storage] +
+                screenPrices[screen] +
+                casePrices[@case] +
+                usbPrices[usb]
+            ) * 1.2m;
+
         }
 
         static void PrintSeparator()
