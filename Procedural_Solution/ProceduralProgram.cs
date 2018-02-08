@@ -70,6 +70,7 @@ namespace Procedural_Solution
                     PrintEstimate();
                     PrintSeparator();
 
+                    // Task 2 Completed 
                     bool allInStock =
                         processorStock[processor] > 0 &&
                         ramStock[ram] > 0 &&
