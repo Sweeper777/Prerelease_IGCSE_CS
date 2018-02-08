@@ -93,6 +93,13 @@ namespace Procedural_Solution
                             caseStock[@case]--;
                             usbStock[usb]--;
 
+                            processorSold[processor]++;
+                            ramSold[ram]++;
+                            storageSold[storage]++;
+                            screenSold[screen]++;
+                            caseSold[@case]++;
+                            usbSold[usb]++;
+
                         }
                         else
                         {
