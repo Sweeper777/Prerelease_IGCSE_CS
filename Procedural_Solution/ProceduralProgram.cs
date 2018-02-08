@@ -5,7 +5,7 @@ namespace Procedural_Solution
 {
     class MainClass
     {
-        
+        #region choices and prices
         static IReadOnlyList<string> processorChoices = new List<string> { "p3", "p5", "p7" }.AsReadOnly();
         static IReadOnlyList<int> processorPrices = new List<int> { 100, 120, 200 }.AsReadOnly();
 
@@ -23,6 +23,7 @@ namespace Procedural_Solution
 
         static IReadOnlyList<string> usbChoices = new List<string> { "2 ports", "4 ports" }.AsReadOnly();
         static IReadOnlyList<int> usbPrices = new List<int> { 10, 20 }.AsReadOnly();
+        #endregion
         static int processor;
         static int ram;
         static int storage;
