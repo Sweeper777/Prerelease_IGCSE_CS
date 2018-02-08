@@ -82,6 +82,10 @@ namespace Procedural_Solution
                         Console.WriteLine("All the selected components are in stock. Press C to confirm the order, or any other key to cancel.");
                         if (char.ToLower(Console.ReadKey().KeyChar) == 'c')
                         {
+                            Console.WriteLine();
+                            Console.WriteLine("Please enter your name.");
+                            var name = Console.ReadLine();
+
                         }
                         else
                         {
