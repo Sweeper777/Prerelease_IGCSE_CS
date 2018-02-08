@@ -86,6 +86,13 @@ namespace Procedural_Solution
                             Console.WriteLine("Please enter your name.");
                             var name = Console.ReadLine();
 
+                            processorStock[processor]--;
+                            ramStock[ram]--;
+                            storageStock[storage]--;
+                            screenStock[screen]--;
+                            caseStock[@case]--;
+                            usbStock[usb]--;
+
                         }
                         else
                         {
