@@ -70,6 +70,32 @@ namespace Procedural_Solution
                     PrintEstimate();
                     PrintSeparator();
 
+                    bool allInStock =
+                        processorStock[processor] > 0 &&
+                        ramStock[ram] > 0 &&
+                        storageStock[storage] > 0 &&
+                        screenStock[screen] > 0 &&
+                        caseStock[@case] > 0 &&
+                        usbStock[usb] > 0;
+                    if (allInStock)
+                    {
+                        Console.WriteLine("All the selected components are in stock. Press C to confirm the order, or any other key to cancel.");
+                        if (char.ToLower(Console.ReadKey().KeyChar) == 'c')
+                        {
+                        }
+                        else
+                        {
+                            Console.WriteLine();
+                            Console.WriteLine("Order canceled");
+                            PrintSeparator();
+                            continue;
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("One or more components requested is out of stock. Please try other components.");
+                        continue;
+                    }
                 }
             }
         }
