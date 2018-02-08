@@ -100,6 +100,12 @@ namespace Procedural_Solution
                             caseSold[@case]++;
                             usbSold[usb]++;
 
+                            PrintSeparator();
+                            PrintEstimate();
+                            Console.WriteLine($"Customer Name: {name}");
+                            Console.WriteLine($"Date: {DateTime.Today.ToShortDateString()}");
+                            PrintSeparator();
+
                         }
                         else
                         {
