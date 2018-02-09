@@ -176,6 +176,14 @@ namespace Procedural_Solution
         {
             Console.WriteLine("-------------------");
         }
+        static void PrintReport()
+        {
+            PrintSeparator();
+            Console.WriteLine("End of Day Report");
+            PrintSeparator();
+            Console.WriteLine($"Number of orders: {orderNumbers.Count}");
+        }
+
         static void PrintComponentsSold(string componentName, IReadOnlyList<string> choices, List<int> sold)
         {
             for (int i = 0; i < choices.Count; i++)
