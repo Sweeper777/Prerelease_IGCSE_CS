@@ -182,6 +182,14 @@ namespace Procedural_Solution
             Console.WriteLine("End of Day Report");
             PrintSeparator();
             Console.WriteLine($"Number of orders: {orderNumbers.Count}");
+            Console.WriteLine("Components Sold:");
+
+            PrintComponentsSold("Processor", processorChoices, processorSold);
+            PrintComponentsSold("RAM", ramChoices, ramSold);
+            PrintComponentsSold("Storage", storageChoices, storageSold);
+            PrintComponentsSold("Screen", screenChoices, screenSold);
+            PrintComponentsSold("Case", caseChoices, caseSold);
+            PrintComponentsSold("USB Ports", usbChoices, usbSold);
         }
 
         static void PrintComponentsSold(string componentName, IReadOnlyList<string> choices, List<int> sold)
