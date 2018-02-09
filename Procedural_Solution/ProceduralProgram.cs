@@ -176,5 +176,12 @@ namespace Procedural_Solution
         {
             Console.WriteLine("-------------------");
         }
+        static void PrintComponentsSold(string componentName, IReadOnlyList<string> choices, List<int> sold)
+        {
+            for (int i = 0; i < choices.Count; i++)
+            {
+                Console.WriteLine($"{componentName} - {choices[i]}: {sold[i]}");
+            }
+        }
     }
 }
