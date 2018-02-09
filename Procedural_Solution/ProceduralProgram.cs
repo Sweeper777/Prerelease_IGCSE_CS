@@ -42,12 +42,16 @@ namespace Procedural_Solution
         static List<int> caseStock = new List<int> { 10, 10 };
         static List<int> usbStock = new List<int> { 10, 10 };
         #endregion
+
+        #region sold
         static List<int> processorSold = new List<int> { 0, 0, 0 };
         static List<int> ramSold = new List<int> { 0, 0 };
         static List<int> storageSold = new List<int> { 0, 0 };
         static List<int> screenSold = new List<int> { 0, 0 };
         static List<int> caseSold = new List<int> { 0, 0 };
         static List<int> usbSold = new List<int> { 0, 0 };
+        #endregion
+
         static int nextID = 1;
 
         static List<int> orderNumbers = new List<int>();
