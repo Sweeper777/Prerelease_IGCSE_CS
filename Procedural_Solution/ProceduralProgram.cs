@@ -24,12 +24,15 @@ namespace Procedural_Solution
         static IReadOnlyList<string> usbChoices = new List<string> { "2 ports", "4 ports" }.AsReadOnly();
         static IReadOnlyList<int> usbPrices = new List<int> { 10, 20 }.AsReadOnly();
         #endregion
+
+        #region user's choices
         static int processor;
         static int ram;
         static int storage;
         static int screen;
         static int @case;
         static int usb;
+        #endregion
         static List<int> processorStock = new List<int> { 10, 10, 1 };
         static List<int> ramStock = new List<int> { 10, 10 };
         static List<int> storageStock = new List<int> { 10, 10 };
