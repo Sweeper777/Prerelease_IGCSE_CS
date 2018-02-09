@@ -33,12 +33,15 @@ namespace Procedural_Solution
         static int @case;
         static int usb;
         #endregion
+
+        #region stock
         static List<int> processorStock = new List<int> { 10, 10, 1 };
         static List<int> ramStock = new List<int> { 10, 10 };
         static List<int> storageStock = new List<int> { 10, 10 };
         static List<int> screenStock = new List<int> { 10, 10 };
         static List<int> caseStock = new List<int> { 10, 10 };
         static List<int> usbStock = new List<int> { 10, 10 };
+        #endregion
         static List<int> processorSold = new List<int> { 0, 0, 0 };
         static List<int> ramSold = new List<int> { 0, 0 };
         static List<int> storageSold = new List<int> { 0, 0 };
