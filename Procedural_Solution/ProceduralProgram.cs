@@ -190,6 +190,8 @@ namespace Procedural_Solution
             PrintComponentsSold("Screen", screenChoices, screenSold);
             PrintComponentsSold("Case", caseChoices, caseSold);
             PrintComponentsSold("USB Ports", usbChoices, usbSold);
+
+            Console.WriteLine($"Total Value: ${totalValue}");
         }
 
         static void PrintComponentsSold(string componentName, IReadOnlyList<string> choices, List<int> sold)
