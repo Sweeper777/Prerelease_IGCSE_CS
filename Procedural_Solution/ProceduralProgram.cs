@@ -176,6 +176,8 @@ namespace Procedural_Solution
         {
             Console.WriteLine("-------------------");
         }
+
+        // Task 3 Completed
         static void PrintReport()
         {
             PrintSeparator();
