@@ -118,6 +118,16 @@ namespace Procedural_Solution
                             Console.WriteLine($"Date: {DateTime.Today.ToShortDateString()}");
                             PrintSeparator();
 
+                            orderNumbers.Add(nextID);
+                            totalValue += (
+                                processorPrices[processor] +
+                                ramPrices[ram] +
+                                storagePrices[storage] +
+                                screenPrices[screen] +
+                                casePrices[@case] +
+                                usbPrices[usb]
+                            ) * 1.2m;
+                            nextID++;
                         }
                         else
                         {
@@ -133,7 +143,12 @@ namespace Procedural_Solution
                         continue;
                     }
                 }
+                else
+                {
+                    break;
+                }
             }
+            PrintReport();
         }
 
         static int AskForChoice(string componentName, IReadOnlyList<string> choices, IReadOnlyList<int> prices)
