@@ -1,0 +1,60 @@
+﻿Task 1
+
+ProcessorChoices = ["p3", "p5", "p7"]
+ProcessorPrices = [100, 120, 200]
+RAMChoices = ["16GB", "32GB"]
+RAMPrices = [75, 150]
+StorageChoices = ["1TB", "2TB"]
+StoragePrices = [50, 100]
+ScreenChoices = ["19\"", "23\""]
+ScreenPrices = [65, 120]
+CaseChoices = ["Mini Tower", "Midi Tower"]
+CasePrices = [40, 70]
+USBChoices = ["2 ports", "4 ports"]
+USBPrices = [10, 20]
+
+UserProcessor = -1
+UserRAM = -1
+UserStorage = -1
+UserScreen = -1
+UserCase = -1
+UserUSB = -1
+
+NextID = 1
+
+FUNCTION AskForChoice(ComponentName, Choices, Prices)
+    OUTPUT "Please select a", ComponentName
+    FOR i = 0 TO Length(Choices) STEP 1
+        OUTPUT i + 1, Choices[i], Prices[,]
+    NEXT
+    Choice = INPUT - 1
+    return Choice
+ENDFUNCTION
+
+FUNCTION PrintEstimate()
+    OUTPUT "ID:", NextID
+    OUTPUT "Processor:", ProcessorChoices[UserProcessor]
+    OUTPUT "RAM:", RAMChoices[UserRAM]
+    OUTPUT "Storage:", StorageChoices[UserStorage]
+    OUTPUT "Screen:", ScreenChoices[UserScreen]
+    OUTPUT "Case:", CaseChoices[UserCase]
+    OUTPUT "USB:", USBChoices[UserUSB]
+    Price = (
+            ProcessorPrices[UserProcessor] +
+            RAMPrices[UserRAM] +
+            StoragePrices[UserStorage] +
+            ScreenPrices[UserScreen] +
+            CasePrices[UserCase] +
+            USBPrices[UserUSB]
+            ) * 1.2;
+    OUTPUT "Price:", Price
+ENDFUNCTION
+
+UserProcessor = AskForChoice("processor", ProcessorChoices, ProcessorPrices);
+UserRAM = AskForChoice("RAM", RAMChoices, RAMPrices);
+UserStorage = AskForChoice("storage", StorageChoices, StoragePrices);
+UserScreen = AskForChoice("screen", ScreenChoices, ScreenPrices);
+UserCase = AskForChoice("case", CaseChoices, CasePrices);
+UserUSB = AskForChoice("USB port count", USBChoices, USBPrices);
+
+PrintEstimate()

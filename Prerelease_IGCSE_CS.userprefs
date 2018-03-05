@@ -1,8 +1,9 @@
-﻿<Properties StartupConfiguration="{6DEBA529-3F2F-4C46-91C3-559F4B939D55}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Procedural_Solution/ProceduralProgram.cs">
+﻿<Properties StartupConfiguration="{6DEBA529-3F2F-4C46-91C3-559F4B939D55}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Procedural_Solution/Pseudocode.txt">
     <Files>
       <File FileName="Prerelease_IGCSE_CS/Program.cs" Line="74" Column="1" />
-      <File FileName="Procedural_Solution/ProceduralProgram.cs" Line="220" Column="10" />
+      <File FileName="Procedural_Solution/ProceduralProgram.cs" Line="73" Column="1" />
+      <File FileName="Procedural_Solution/Pseudocode.txt" Line="60" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
