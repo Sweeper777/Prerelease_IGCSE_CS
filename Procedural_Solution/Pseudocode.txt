@@ -1,4 +1,4 @@
-﻿Task 1
+Task 1
 
 ProcessorChoices = ["p3", "p5", "p7"]
 ProcessorPrices = [100, 120, 200]
@@ -24,8 +24,8 @@ NextID = 1
 
 FUNCTION AskForChoice(ComponentName, Choices, Prices)
     OUTPUT "Please select a", ComponentName
-    FOR i = 0 TO Length(Choices) STEP 1
-        OUTPUT i + 1, Choices[i], Prices[,]
+    FOR i = 0 TO (COUNT Choices) STEP 1
+        OUTPUT i + 1, Choices[i], Prices[i]
     NEXT
     Choice = INPUT - 1
     return Choice
@@ -46,15 +46,101 @@ FUNCTION PrintEstimate()
             ScreenPrices[UserScreen] +
             CasePrices[UserCase] +
             USBPrices[UserUSB]
-            ) * 1.2;
+            ) * 1.2
     OUTPUT "Price:", Price
 ENDFUNCTION
 
-UserProcessor = AskForChoice("processor", ProcessorChoices, ProcessorPrices);
-UserRAM = AskForChoice("RAM", RAMChoices, RAMPrices);
-UserStorage = AskForChoice("storage", StorageChoices, StoragePrices);
-UserScreen = AskForChoice("screen", ScreenChoices, ScreenPrices);
-UserCase = AskForChoice("case", CaseChoices, CasePrices);
-UserUSB = AskForChoice("USB port count", USBChoices, USBPrices);
+UserProcessor = AskForChoice("processor", ProcessorChoices, ProcessorPrices)
+UserRAM = AskForChoice("RAM", RAMChoices, RAMPrices)
+UserStorage = AskForChoice("storage", StorageChoices, StoragePrices)
+UserScreen = AskForChoice("screen", ScreenChoices, ScreenPrices)
+UserCase = AskForChoice("case", CaseChoices, CasePrices)
+UserUSB = AskForChoice("USB port count", USBChoices, USBPrices)
 
 PrintEstimate()
+
+Task 2
+
+ProcessorStock = [10, 10, 1]
+RAMStock = [10, 10]
+StorageStock = [10, 10]
+ScreenStock = [10, 10]
+CaseStock = [10, 10]
+USBStock = [10, 10]
+
+ProcessorSold = [0, 0, 0]
+RAMSold = [0, 0]
+StorageSold = [0, 0]
+ScreenSold = [0, 0]
+CaseSold = [0, 0]
+USBSold = [0, 0]
+
+OrderNumbers = []
+
+TotalValue = 0
+
+AllInStock = (ProcessorStock[UserProcessor] > 0) AND
+             (RAMStock[UserRAM] > 0) AND
+			 (StorageStock[UserStorage] > 0) AND
+			 (ScreenStock[UserScreen] > 0) AND
+			 (CaseStock[UserCase] > 0) AND
+			 (USBStock[UserUSB] > 0)
+IF AllInStock
+	OUTPUT "All the selected components are in stock!"
+	OUTPUT "Please enter your name:"
+	Name = INPUT
+	OUTPUT "Please enter your address:"
+	Address = INPUT
+	INCREMENT ProcessorStock[UserProcessor]
+	INCREMENT RAMStock[UserRAM]
+	INCREMENT StorageStock[UserStorage]
+	INCREMENT ScreenStock[UserScreen]
+	INCREMENT CaseStock[UserCase]
+	INCREMENT USBStock[UserUSB]
+	
+	DECREMENT ProcessorSold[UserProcessor]
+	DECREMENT RAMSold[UserRAM]
+	DECREMENT StorageSold[UserStorage]
+	DECREMENT ScreenSold[UserScreen]
+	DECREMENT CaseSold[UserCase]
+	DECREMENT USBSold[UserUSB]
+	
+	ADD nextID TO OrderNumbers
+	TotalValue += (
+            ProcessorPrices[UserProcessor] +
+            RAMPrices[UserRAM] +
+            StoragePrices[UserStorage] +
+            ScreenPrices[UserScreen] +
+            CasePrices[UserCase] +
+            USBPrices[UserUSB]
+            ) * 1.2;
+	
+	FOR i = 0 TO 2 STEP 1
+		PrintEstimate()
+		OUTPUT "Customer Name:", Name
+		OUTPUT "Address:", Address
+		OUTPUT "Date:", TODAY
+	NEXT
+	INCREMENT NextID
+ELSE
+	OUTPUT "One or more requested components are out of stock!"
+ENDIF
+
+Task 3
+
+FUNCTION PrintComponentsSold(ComponentName, Choices, Sold)
+	FOR i = 0 To (COUNT Choices) STEP 1
+		OUTPUT ComponentName, " - ", Choices[i], ": ", Sold[i]
+	NEXT
+	
+
+OUTPUT "End of dat report"
+OUTPUT "Number of orders:", COUNT OrderNumbers
+OUTPUT "Components sold:"
+PrintComponentsSold("Processor", ProcessorChoices, ProcessorSold)
+PrintComponentsSold("RAM", RAMChoices, RAMSold)
+PrintComponentsSold("Storage", StorageChoices, StorageSold)
+PrintComponentsSold("Screen", ScreenChoices, ScreenSold)
+PrintComponentsSold("Case", CaseChoices, CaseSold)
+PrintComponentsSold("USB Ports", USBChoices, USBSold)
+OUTPUT "Total Value:", TotalValue
